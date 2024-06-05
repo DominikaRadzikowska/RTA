@@ -4,7 +4,7 @@ from flask
 import Flask, request, jsonify 
 import joblib 
 import numpy as np 
-# Wczytanie modelu 
+
 model = joblib.load('model.pkl') 
 app = Flask(__name__) 
 @app.route('/predict', methods=['POST']) 
